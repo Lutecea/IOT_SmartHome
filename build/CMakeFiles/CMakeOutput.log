@@ -1,0 +1,387 @@
+The target system is: Generic - 3.7.99 - xtensa
+The host system is: Linux - 6.8.0-47-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/luden/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/luden/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+xtensa-espressif_esp32_zephyr-elf-gcc (Zephyr SDK 0.17.0) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a9a7e && [1/2] Building C object CMakeFiles/cmTC_a9a7e.dir/src.c.obj
+[2/2] Linking C executable cmTC_a9a7e
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wall_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_92d86 && [1/2] Building C object CMakeFiles/cmTC_92d86.dir/src.c.obj
+[2/2] Linking C executable cmTC_92d86
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wformat__Wformat_security_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e7052 && [1/2] Building C object CMakeFiles/cmTC_e7052.dir/src.c.obj
+[2/2] Linking C executable cmTC_e7052
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wformat__Wformat_zero_length_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f0dc6 && [1/2] Building C object CMakeFiles/cmTC_f0dc6.dir/src.c.obj
+[2/2] Linking C executable cmTC_f0dc6
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wdouble_promotion_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c00f4 && [1/2] Building C object CMakeFiles/cmTC_c00f4.dir/src.c.obj
+[2/2] Linking C executable cmTC_c00f4
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wpointer_sign_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7b63f && [1/2] Building C object CMakeFiles/cmTC_7b63f.dir/src.c.obj
+[2/2] Linking C executable cmTC_7b63f
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wpointer_arith_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_89955 && [1/2] Building C object CMakeFiles/cmTC_89955.dir/src.c.obj
+[2/2] Linking C executable cmTC_89955
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wexpansion_to_defined_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e83da && [1/2] Building C object CMakeFiles/cmTC_e83da.dir/src.c.obj
+[2/2] Linking C executable cmTC_e83da
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wlogical_op_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_65743 && [1/2] Building C object CMakeFiles/cmTC_65743.dir/src.c.obj
+[2/2] Linking C executable cmTC_65743
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wmissing_field_initializers_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_787cd && [1/2] Building C object CMakeFiles/cmTC_787cd.dir/src.c.obj
+[2/2] Linking C executable cmTC_787cd
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wpacked_bitfield_compat_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b3954 && [1/2] Building C object CMakeFiles/cmTC_b3954.dir/src.c.obj
+[2/2] Linking C executable cmTC_b3954
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wvla_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_68717 && [1/2] Building C object CMakeFiles/cmTC_68717.dir/src.c.obj
+[2/2] Linking C executable cmTC_68717
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wunused_but_set_variable_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3c885 && [1/2] Building C object CMakeFiles/cmTC_3c885.dir/src.c.obj
+[2/2] Linking C executable cmTC_3c885
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Werror_implicit_int_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c9d77 && [1/2] Building C object CMakeFiles/cmTC_c9d77.dir/src.c.obj
+[2/2] Linking C executable cmTC_c9d77
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_freestanding_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9abea && [1/2] Building C object CMakeFiles/cmTC_9abea.dir/src.c.obj
+[2/2] Linking C executable cmTC_9abea
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_ffreestanding_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_61457 && [1/2] Building C object CMakeFiles/cmTC_61457.dir/src.c.obj
+[2/2] Linking C executable cmTC_61457
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_gdwarf_4_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b1cb2 && [1/2] Building C object CMakeFiles/cmTC_b1cb2.dir/src.c.obj
+[2/2] Linking C executable cmTC_b1cb2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___gc_sections succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_65aa4 && [1/2] Building C object CMakeFiles/cmTC_65aa4.dir/src.c.obj
+[2/2] Linking C executable cmTC_65aa4
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___build_id_none succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_34905 && [1/2] Building C object CMakeFiles/cmTC_34905.dir/src.c.obj
+[2/2] Linking C executable cmTC_34905
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__nostdlib succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9ec06 && [1/2] Building C object CMakeFiles/cmTC_9ec06.dir/src.c.obj
+[2/2] Linking C executable cmTC_9ec06
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__static succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_15cd4 && [1/2] Building C object CMakeFiles/cmTC_15cd4.dir/src.c.obj
+[2/2] Linking C executable cmTC_15cd4
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl__X succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3a120 && [1/2] Building C object CMakeFiles/cmTC_3a120.dir/src.c.obj
+[2/2] Linking C executable cmTC_3a120
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl__N succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fffb8 && [1/2] Building C object CMakeFiles/cmTC_fffb8.dir/src.c.obj
+[2/2] Linking C executable cmTC_fffb8
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___orphan_handling_warn succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_babd1 && [1/2] Building C object CMakeFiles/cmTC_babd1.dir/src.c.obj
+[2/2] Linking C executable cmTC_babd1
+/home/luden/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/../lib/gcc/xtensa-espressif_esp32_zephyr-elf/12.2.0/../../../../xtensa-espressif_esp32_zephyr-elf/bin/ld.bfd: warning: orphan section `.xtensa.info' from `CMakeFiles/cmTC_babd1.dir/src.c.obj' being placed in section `.xtensa.info'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___print_memory_usage succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fee33 && [1/2] Building C object CMakeFiles/cmTC_fee33.dir/src.c.obj
+[2/2] Linking C executable cmTC_fee33
+Memory region         Used Size  Region Size  %age Used
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___no_relax succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_49091 && [1/2] Building C object CMakeFiles/cmTC_49091.dir/src.c.obj
+[2/2] Linking C executable cmTC_49091
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___sort_common_descending succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a6a84 && [1/2] Building C object CMakeFiles/cmTC_a6a84.dir/src.c.obj
+[2/2] Linking C executable cmTC_a6a84
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___sort_section_alignment succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_99490 && [1/2] Building C object CMakeFiles/cmTC_99490.dir/src.c.obj
+[2/2] Linking C executable cmTC_99490
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_cbb90 && [1/2] Building C object CMakeFiles/cmTC_cbb90.dir/src.c.obj
+[2/2] Linking C executable cmTC_cbb90
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_asynchronous_unwind_tables_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_01ff0 && [1/2] Building C object CMakeFiles/cmTC_01ff0.dir/src.c.obj
+[2/2] Linking C executable cmTC_01ff0
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_reorder_functions_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_69ea6 && [1/2] Building C object CMakeFiles/cmTC_69ea6.dir/src.c.obj
+[2/2] Linking C executable cmTC_69ea6
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check__param_min_pagesize_0_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f7812 && [1/2] Building C object CMakeFiles/cmTC_f7812.dir/src.c.obj
+[2/2] Linking C executable cmTC_f7812
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_defer_pop_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fcb51 && [1/2] Building C object CMakeFiles/cmTC_fcb51.dir/src.c.obj
+[2/2] Linking C executable cmTC_fcb51
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fmacro_prefix_map__home_luden_zephyrproject_IOT_SmartHome_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e3c7f && [1/2] Building C object CMakeFiles/cmTC_e3c7f.dir/src.c.obj
+[2/2] Linking C executable cmTC_e3c7f
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fmacro_prefix_map__home_luden_zephyrproject_zephyr_ZEPHYR_BASE_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7b9cb && [1/2] Building C object CMakeFiles/cmTC_7b9cb.dir/src.c.obj
+[2/2] Linking C executable cmTC_7b9cb
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fmacro_prefix_map__home_luden_zephyrproject_WEST_TOPDIR_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_31945 && [1/2] Building C object CMakeFiles/cmTC_31945.dir/src.c.obj
+[2/2] Linking C executable cmTC_31945
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_ffunction_sections_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a47ad && [1/2] Building C object CMakeFiles/cmTC_a47ad.dir/src.c.obj
+[2/2] Linking C executable cmTC_a47ad
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fdata_sections_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_de594 && [1/2] Building C object CMakeFiles/cmTC_de594.dir/src.c.obj
+[2/2] Linking C executable cmTC_de594
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_mlongcalls_C__nostartfiles__nostdlib__isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include___isystem___home_luden_zephyr_sdk_0_17_0_xtensa_espressif_esp32_zephyr_elf_bin____lib_gcc_xtensa_espressif_esp32_zephyr_elf_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: /home/luden/zephyrproject/IOT_SmartHome/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_940a6 && [1/2] Building C object CMakeFiles/cmTC_940a6.dir/src.c.obj
+[2/2] Linking C executable cmTC_940a6
+
+
+Source file was:
+int main(void) { return 0; }

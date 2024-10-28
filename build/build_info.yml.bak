@@ -1,0 +1,50 @@
+cmake:
+  application:
+    configuration-dir: /home/luden/zephyrproject/IOT_SmartHome
+    source-dir: /home/luden/zephyrproject/IOT_SmartHome
+  board:
+    name: esp32_devkitc_wroom
+    qualifiers: esp32/procpu
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /home/luden/zephyrproject/zephyr/dts/bindings
+    files:
+     - /home/luden/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom_procpu.dts
+    include-dirs:
+     - /home/luden/zephyrproject/modules/hal/atmel/include
+     - /home/luden/zephyrproject/modules/hal/gigadevice/include
+     - /home/luden/zephyrproject/modules/hal/microchip/dts
+     - /home/luden/zephyrproject/modules/hal/nuvoton/dts
+     - /home/luden/zephyrproject/modules/hal/nxp/dts
+     - /home/luden/zephyrproject/modules/hal/stm32/dts
+     - /home/luden/zephyrproject/zephyr/include
+     - /home/luden/zephyrproject/zephyr/include/zephyr
+     - /home/luden/zephyrproject/zephyr/dts/common
+     - /home/luden/zephyrproject/zephyr/dts/x86
+     - /home/luden/zephyrproject/zephyr/dts/xtensa
+     - /home/luden/zephyrproject/zephyr/dts/sparc
+     - /home/luden/zephyrproject/zephyr/dts/riscv
+     - /home/luden/zephyrproject/zephyr/dts/posix
+     - /home/luden/zephyrproject/zephyr/dts/nios2
+     - /home/luden/zephyrproject/zephyr/dts/arm64
+     - /home/luden/zephyrproject/zephyr/dts/arm
+     - /home/luden/zephyrproject/zephyr/dts/arc
+     - /home/luden/zephyrproject/zephyr/dts
+  kconfig:
+    files:
+     - /home/luden/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom_procpu_defconfig
+     - /home/luden/zephyrproject/IOT_SmartHome/prj.conf
+    user-files:
+     - /home/luden/zephyrproject/IOT_SmartHome/prj.conf
+  toolchain:
+    name: zephyr
+    path: /home/luden/zephyr-sdk-0.17.0
+  zephyr:
+    version: 3.7.99
+    zephyr-base: /home/luden/zephyrproject/zephyr
+version: 0.1.0
+west:
+  command: /home/luden/zephyrproject/.venv/bin/west build -b esp32_devkitc_wroom .
+  topdir: /home/luden/zephyrproject
+  version: 1.2.0
