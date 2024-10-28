@@ -1,4 +1,4 @@
-{ 
+/ { 
     gpio_keys {
         compatible = "gpio-keys";
         ledyellow: led_yellow {
@@ -10,5 +10,5 @@
 
     aliases {
         led-yellow = &ledyellow;
-    }
-}
+    };
+};
