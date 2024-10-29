@@ -10,23 +10,17 @@
 
     aliases {
         led-yellow = &ledyellow;
+        lcd-screen = &lcdscreen;
     };
 };
 
 &i2c0 {
-    my_i2c_device: ecranlcd@27 {
+    lcdscreen: lcd_screen@27 {
             compatible = "i2c-device";
             label = "LCD";
-            /* reg is the I2C device address.
-             * It must match the node's unit address. */
-            reg = <27>;
+            reg = <0x27>;
 
-    
-            /* Configure other I2C device properties as needed.
-             * Find your device's DT binding for details. */
+
     };
 
-aliases {
-    lcd-screen = &lcdscreen;
-};
 };
