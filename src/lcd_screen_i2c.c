@@ -1,9 +1,10 @@
-#include "../inc/lcd_screen_i2c.h"
-
+#include "../driver-lcd1602-i2c/lcd_screen_i2c.h"
 #include <zephyr/kernel.h>
 
 static void lcd_toggle_enable(const struct i2c_dt_spec *dev_lcd_screen, uint8_t bits);
 static void lcd_byte(const struct i2c_dt_spec *dev_lcd_screen, uint8_t bits, uint8_t mode);
+
+
 
     void init_lcd(const struct i2c_dt_spec *dev_lcd_screen)
 {
@@ -25,7 +26,7 @@ static void lcd_byte(const struct i2c_dt_spec dev_lcd_screen, uint8_t bits, uint
     ret = i2c_write_dt(dev_lcd_screen, bits_high, sizeof(bits_high));
     if (ret != 0)
     {
-        printk("ERROR while writing to I2C")
+        printk("ERROR while writing to I2C");
     }
     lcd_toggle_enable(dev_lcd_screen, bits_high);
 
