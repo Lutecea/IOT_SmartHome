@@ -23,17 +23,25 @@ int main(void)
     //Variable de temperature et humidité
     struct sensor_value temperature, humidity;
     
-    sensor_sample_fetch(dht11);
 
-    //Lecture des données 
-    sensor_channel_get(dht11,  SENSOR_CHAN_AMBIENT_TEMP, &temperature);
-    sensor_channel_get(dht11,  SENSOR_CHAN_HUMIDITY, &humidity);
-
-    int temp = sensor_value_to_double(&temperature);
-    int humi = sensor_value_to_double(&humidity);
     
-    printf("Température : %d \n", temp);
-    printf("Humidité : %d", humi);
+    while (1)
+    { 
+            sensor_sample_fetch(dht11);
+
+        //Lecture des données 
+        sensor_channel_get(dht11,  SENSOR_CHAN_AMBIENT_TEMP, &temperature);
+        sensor_channel_get(dht11,  SENSOR_CHAN_HUMIDITY, &humidity);
+
+        int temp = sensor_value_to_double(&temperature);
+        int humi = sensor_value_to_double(&humidity);
+
+        printf("Température : %d \n", temp);
+        printf("Humidité : %d\n", humi);
+
+        //timer de 10 sec
+        k_sleep(K_MSEC(10000));
+    };
 
     // Display a message
     //write_lcd(&lcd_screen_dev, ZEPHYR_MSG, LCD_LINE_1);
