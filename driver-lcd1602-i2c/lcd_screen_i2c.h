@@ -25,7 +25,7 @@ struct i2c_dt_spec;
 #define START_ALERT_MONITORING_MSG_1 "Alarm"
 #define START_ALERT_MONITORING_MSG_2 "Protection"
 
-#define INTRUDER_MSG_1 "INTRUDER"
+#define INTRUDER_MSG_1 "DEGAGE POV NAZE"
 #define INTRUDER_MSG_2 "LEAVE !"
 
 void init_lcd(const struct i2c_dt_spec *dev_lcd_screen);

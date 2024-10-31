@@ -5,21 +5,26 @@
 #include <zephyr/drivers/i2c.h>
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/drivers/adc.h>
+//#include <drivers/pwm.h>
 
 #include <inttypes.h>
 #include <stddef.h>
 #include <stdint.h>
 
+//Définition des aliases
 #define LED_YELLOW_NODE DT_ALIAS(led_yellow)
 #define LCD_SCREEN_NODE DT_ALIAS(lcd_screen)
 #define SW0_NODE DT_ALIAS(sw0)
 #define SW1_NODE DT_ALIAS(sw1)
 
+
+
+//Définitions des devices utilisés
 const struct gpio_dt_spec led_yellow_gpio = GPIO_DT_SPEC_GET_OR(LED_YELLOW_NODE, gpios, {0});
 const struct i2c_dt_spec lcd_screen_dev = I2C_DT_SPEC_GET(LCD_SCREEN_NODE);
 const struct device *const dht11 = DEVICE_DT_GET_ONE(aosong_dht);
 static const struct gpio_dt_spec button0 = GPIO_DT_SPEC_GET_OR(SW0_NODE, gpios,{0});
-static const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET_OR(SW1_NODE, gpios,{0});
+//static const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET_OR(SW1_NODE, gpios,{0});
 
         //=========================================
         //                Fonctions
@@ -30,17 +35,23 @@ static const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET_OR(SW1_NODE, gpios,{
 
 	//Action à réaliser à l'appui bouton
 	printk("Appui bouton !");
+
 }
 
-
+        //=========================================
+        //                Main
+        //=========================================
 int main(void) 
 {
+	static struct gpio_callback button_cb_data;
 
 	gpio_pin_configure_dt(&led_yellow_gpio, GPIO_OUTPUT_HIGH);
     
     
-    // Init LCD device
+    // Init LCD device & buttons
     init_lcd(&lcd_screen_dev);
+	gpio_init_callback(&button_cb_data, button_pressed, BIT(button0.pin));
+	gpio_add_callback(button0.port, &button_cb_data);
 
 	
 	k_sleep(K_SECONDS(1));
@@ -105,7 +116,7 @@ static const struct adc_dt_spec adc_channels[] = {
 };
 
     int err;
-	uint32_t count = 0;
+	//uint32_t count = 0;
 	uint16_t buf;
 	struct adc_sequence sequence = {
 		.buffer = &buf,
@@ -176,14 +187,13 @@ void thread_button(void)
     //=========================================
 
 	int ret;
-	static struct gpio_callback button_cb_data;
+	
 
 	ret = gpio_pin_configure_dt(&button0, GPIO_INPUT);
 
 	ret = gpio_pin_interrupt_configure_dt(&button0,	GPIO_INT_EDGE_FALLING);
 
-	gpio_init_callback(&button_cb_data, button_pressed, BIT(button0.pin));
-	gpio_add_callback(button0.port, &button_cb_data);
+	
 
 };
 
