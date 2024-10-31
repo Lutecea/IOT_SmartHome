@@ -35,25 +35,30 @@ static const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET_OR(SW1_NODE, gpios,{
 
 int main(void) 
 {
+
 	gpio_pin_configure_dt(&led_yellow_gpio, GPIO_OUTPUT_HIGH);
     
     
     // Init LCD device
     init_lcd(&lcd_screen_dev);
 
+	
+	k_sleep(K_SECONDS(1));
+	while (1)
+	{
 
+		k_sleep(K_SECONDS(10));
+	}
     
 }
 
-void thread_lecture(void)
-{
-    
-
-    //void thread0() 
-    while (1)
-    { 
-		    //Variable de temperature et humidité
+void thread_lecture_th()
+{ 
+	while (1)
+	{
+		//Variable de temperature et humidité
     	struct sensor_value temperature, humidity;
+
         //=========================================
         //Lecture Capteur de température & Humidité
         //=========================================
@@ -71,7 +76,15 @@ void thread_lecture(void)
         printf("Température : %d \n", temp);
         printf("Humidité : %d\n", humi);
 
-        
+		k_sleep(K_SECONDS(10));
+	}
+};
+
+
+void thread_lecture_analog(void)
+{
+    while (1)
+	{
         //=========================================
         //Lecture SteamSensor
         //=========================================
@@ -150,14 +163,14 @@ static const struct adc_dt_spec adc_channels[] = {
 			}
 		}
 
-		k_sleep(K_MSEC(1000));
-	}
+	k_sleep(K_SECONDS(10));	
+	};
 
-
-};
+}
 
 void thread_button(void)
 {
+
     //=========================================
     //Appui bouton
     //=========================================
@@ -165,15 +178,16 @@ void thread_button(void)
 	int ret;
 	static struct gpio_callback button_cb_data;
 
+	ret = gpio_pin_configure_dt(&button0, GPIO_INPUT);
+
+	ret = gpio_pin_interrupt_configure_dt(&button0,	GPIO_INT_EDGE_FALLING);
+
 	gpio_init_callback(&button_cb_data, button_pressed, BIT(button0.pin));
 	gpio_add_callback(button0.port, &button_cb_data);
-	printk("Set up button at %s pin %d\n", button0.port->name, button0.pin);
-
-
-
 
 };
 
 
-K_THREAD_DEFINE(thread_lecture_id, 521, thread_lecture, NULL, NULL, NULL, 9, 0, 0);
+K_THREAD_DEFINE(thread_lecture_analog_id, 521, thread_lecture_analog, NULL, NULL, NULL, 9, 0, 0);
 K_THREAD_DEFINE(thread_button_id, 521, thread_button, NULL, NULL, NULL, 9, 0, 0);
+K_THREAD_DEFINE(thread_lecture_th_id, 521, thread_lecture_th, NULL, NULL, NULL, 9, 0, 0);
