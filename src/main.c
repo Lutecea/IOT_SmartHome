@@ -35,20 +35,25 @@ static const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET_OR(SW1_NODE, gpios,{
 
 int main(void) 
 {
-    gpio_pin_configure_dt(&led_yellow_gpio, GPIO_OUTPUT_HIGH);
+	gpio_pin_configure_dt(&led_yellow_gpio, GPIO_OUTPUT_HIGH);
     
     
     // Init LCD device
     init_lcd(&lcd_screen_dev);
 
-    //Variable de temperature et humidité
-    struct sensor_value temperature, humidity;
+
+    
+}
+
+void thread_lecture(void)
+{
     
 
     //void thread0() 
     while (1)
     { 
-
+		    //Variable de temperature et humidité
+    	struct sensor_value temperature, humidity;
         //=========================================
         //Lecture Capteur de température & Humidité
         //=========================================
@@ -99,13 +104,13 @@ static const struct adc_dt_spec adc_channels[] = {
 	for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++) {
 		if (!adc_is_ready_dt(&adc_channels[i])) {
 			printk("ADC controller device %s not ready\n", adc_channels[i].dev->name);
-			return 0;
+
 		}
 
 		err = adc_channel_setup_dt(&adc_channels[i]);
 		if (err < 0) {
 			printk("Could not setup channel #%d (%d)\n", i, err);
-			return 0;
+
 		}
 	}
 
@@ -147,9 +152,12 @@ static const struct adc_dt_spec adc_channels[] = {
 
 		k_sleep(K_MSEC(1000));
 	}
-	return 0;
 
 
+};
+
+void thread_button(void)
+{
     //=========================================
     //Appui bouton
     //=========================================
@@ -157,32 +165,15 @@ static const struct adc_dt_spec adc_channels[] = {
 	int ret;
 	static struct gpio_callback button_cb_data;
 
-	if (!gpio_is_ready_dt(&button0)) {
-		printk("Error: button device %s is not ready\n",
-		       button0.port->name);
-		return 0;
-	}
-
-	ret = gpio_pin_configure_dt(&button0, GPIO_INPUT);
-	if (ret != 0) {
-		printk("Error %d: failed to configure %s pin %d\n",
-		       ret, button0.port->name, button0.pin);
-		return 0;
-	}
-
-	ret = gpio_pin_interrupt_configure_dt(&button0,
-					      GPIO_INT_EDGE_TO_ACTIVE);
-	if (ret != 0) {
-		printk("Error %d: failed to configure interrupt on %s pin %d\n",
-			ret, button0.port->name, button0.pin);
-		return 0;
-	}
-
 	gpio_init_callback(&button_cb_data, button_pressed, BIT(button0.pin));
 	gpio_add_callback(button0.port, &button_cb_data);
 	printk("Set up button at %s pin %d\n", button0.port->name, button0.pin);
 
 
-	return 0;
+
 
 };
+
+
+K_THREAD_DEFINE(thread_lecture_id, 521, thread_lecture, NULL, NULL, NULL, 9, 0, 0);
+K_THREAD_DEFINE(thread_button_id, 521, thread_button, NULL, NULL, NULL, 9, 0, 0);
