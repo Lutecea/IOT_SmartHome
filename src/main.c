@@ -12,10 +12,26 @@
 
 #define LED_YELLOW_NODE DT_ALIAS(led_yellow)
 #define LCD_SCREEN_NODE DT_ALIAS(lcd_screen)
+#define SW0_NODE DT_ALIAS(sw0)
+#define SW1_NODE DT_ALIAS(sw1)
 
 const struct gpio_dt_spec led_yellow_gpio = GPIO_DT_SPEC_GET_OR(LED_YELLOW_NODE, gpios, {0});
 const struct i2c_dt_spec lcd_screen_dev = I2C_DT_SPEC_GET(LCD_SCREEN_NODE);
 const struct device *const dht11 = DEVICE_DT_GET_ONE(aosong_dht);
+static const struct gpio_dt_spec button0 = GPIO_DT_SPEC_GET_OR(SW0_NODE, gpios,{0});
+static const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET_OR(SW1_NODE, gpios,{0});
+
+        //=========================================
+        //                Fonctions
+        //=========================================
+    void button_pressed(const struct device *dev, struct gpio_callback *cb,
+		    uint32_t pins)
+{
+
+	//Action à réaliser à l'appui bouton
+	printk("Appui bouton !" );
+}
+
 
 int main(void) 
 {
@@ -137,9 +153,36 @@ static const struct adc_dt_spec adc_channels[] = {
     //=========================================
     //Appui bouton
     //=========================================
-    //https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/button/src/main.c + rajout de l'interruption + gestion de threads sinon ça va bloquer
 
-    // Display a message
-    //write_lcd(&lcd_screen_dev, ZEPHYR_MSG, LCD_LINE_1);
-    //write_lcd_clear(&lcd_screen_dev, ZEPHYR_MSG LCD_LINE_2);
-    };
+	int ret;
+	static struct gpio_callback button_cb_data;
+
+	if (!gpio_is_ready_dt(&button0)) {
+		printk("Error: button device %s is not ready\n",
+		       button0.port->name);
+		return 0;
+	}
+
+	ret = gpio_pin_configure_dt(&button0, GPIO_INPUT);
+	if (ret != 0) {
+		printk("Error %d: failed to configure %s pin %d\n",
+		       ret, button0.port->name, button0.pin);
+		return 0;
+	}
+
+	ret = gpio_pin_interrupt_configure_dt(&button0,
+					      GPIO_INT_EDGE_TO_ACTIVE);
+	if (ret != 0) {
+		printk("Error %d: failed to configure interrupt on %s pin %d\n",
+			ret, button0.port->name, button0.pin);
+		return 0;
+	}
+
+	gpio_init_callback(&button_cb_data, button_pressed, BIT(button0.pin));
+	gpio_add_callback(button0.port, &button_cb_data);
+	printk("Set up button at %s pin %d\n", button0.port->name, button0.pin);
+
+
+	return 0;
+
+};
