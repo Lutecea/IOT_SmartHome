@@ -29,7 +29,7 @@ static const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET_OR(SW1_NODE, gpios,{
 {
 
 	//Action à réaliser à l'appui bouton
-	printk("Appui bouton !" );
+	printk("Appui bouton !");
 }
 
 
